@@ -1,9 +1,13 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <Image
+        source={require("/Users/gabrielkromwyk/Documents/CAS Comp Sci/ChooseYourOwnAdventure/assets/images/Cover.jpg")}
+        style={styles.image}
+      ></Image>
       <Text style={styles.text}>
         You wake up in a rough bed with a headache. You don't know where you
         are.
@@ -34,5 +38,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 25,
     fontWeight: 500,
+  },
+  image: {
+    width: 300,
+    height: 300,
+    backgroundColor: "#bd1212",
   },
 });
